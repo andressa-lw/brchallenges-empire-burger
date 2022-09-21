@@ -1,0 +1,106 @@
+#menufood {
+  background: url('../../../assets/bg-cardapio.jpg') no-repeat left center var(--brown);
+  margin: 4rem 0;
+  background-size: contain;
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3.75rem;
+  }
+  .boxTitle {
+    flex: 1;
+    h2 {
+      font-size: 2.625rem;
+      line-height: 2.875rem;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+      span {
+        background-color: var(--yellow);
+        border-radius: 8.27974px;
+        padding: .0625rem .25rem;
+      }
+    }
+    p {
+      width: 100%;
+      max-width: 440px;
+    }
+    .btn {
+      background: var(--red);
+      border-radius: .375rem;
+      padding: .625rem 1.25rem;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      margin-top: 1.125rem;
+      transition: all ease .3s;
+      display: inline-block;
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+  .boxMenu {
+    background-color: var(--brown);
+    flex: 1;
+    padding: 4.5rem 0 4.5rem 2rem;
+    h2 {
+      font-size: 2rem;
+      line-height: 2.1875rem;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 1rem;
+    }
+    ul {
+      li {
+        
+        & + li {
+          margin-top: 2rem;
+        }
+        h3 {
+          font-size: 1.25rem;
+          line-height: 1rem;
+          text-transform: uppercase;
+          color: #FAE4D0;
+          display: flex;
+          column-gap: 8px;
+          .name {
+            flex: 1;
+            display: flex;
+            column-gap: 8px;
+            &:after {
+              content: '';
+              border-bottom: dashed 2px #FAE4D0;
+              flex:1;
+            }
+          }
+          .price {
+            text-align: right;
+          }
+        }
+        p {
+          color: rgba(255, 255, 255, 0.9);
+          line-height: 1.375rem;
+          margin-top: .25rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 980px) {
+    background: url('../../../assets/bg-cardapio-mob.jpg') no-repeat top center var(--brown);
+    .box {
+      flex-direction: column;
+      .boxTitle {
+        padding: 2.5rem 0;
+        flex: 1;
+        h2 {
+          font-size: 1.5625rem;
+          line-height: 1.75rem;
+          max-width: 280px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

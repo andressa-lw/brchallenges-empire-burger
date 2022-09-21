@@ -1,0 +1,24 @@
+#map {
+  padding: 6.25rem 0 0 0;
+  h2 {
+    font-size: 2rem;
+    line-height: 2.1875rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    margin: .25rem 0 2rem 0;
+    text-align: center;
+  }
+  iframe {
+    width: 100%;
+    height: 207px;
+    display: block;
+  }
+  @media (max-width: 560px) {
+    h2 {
+      font-size: 1.5625rem;
+      line-height: 1.75rem;
+    }
+  }
+}

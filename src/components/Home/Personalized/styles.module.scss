@@ -1,0 +1,51 @@
+#personalized {
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3.75rem;
+    .boxImg {
+      flex: 1;
+    }
+    .boxText {
+      flex: 1;
+      h2 {
+        font-size: 2.625rem;
+        line-height: 2.875rem;
+        text-transform: uppercase;
+        color: rgba(29, 6, 5, 0.9);
+        margin-bottom: .625rem;
+        span {
+          background-color: var(--yellow);
+          border-radius: 8.27974px;
+          padding: .0625rem .25rem;
+        }
+      }
+      p {
+        font-size: 1.3125rem;
+        line-height: 1.8125rem;
+      }
+      .btn {
+        background: var(--red);
+        border-radius: .375rem;
+        padding: .625rem 1.25rem;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.375rem;
+        margin-top: 1.125rem;
+        transition: all ease .3s;
+        display: inline-block;
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+  }
+  @media (max-width: 980px) {
+    .box {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+  }
+}
