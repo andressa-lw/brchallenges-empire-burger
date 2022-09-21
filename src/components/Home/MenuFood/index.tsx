@@ -19,13 +19,13 @@ export function MenuFood() {
   }, [])
 
   return (
-    <section id={styles["menufood"]}>
+    <section className={styles.menufood} id="menufood">
       <div className="container">
         <div className={styles.box}>
           <div className={styles.boxTitle}>
             <h2>Escolha o seu combo imperial, <span>peça agora!</span></h2>
             <p>Temos vários tipos de pratos para a nossa realeza, fique esperto porque temos sempre  promoção!</p>
-            <a href="" className={styles.btn}>Ver Cardápio Completo</a>
+            <a href="https://www.ifood.com.br/" target="_blank" rel="noopener noreferrer" className={styles.btn}>Ver Cardápio Completo</a>
           </div>
           <div className={styles.boxMenu}>
             <h2>Cardápio imperial | Burger</h2>

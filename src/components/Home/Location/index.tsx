@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 export function Location() {
   return (
-    <section id={styles["map"]}>
+    <section className={styles.map} id="map">
       <div className="container">
         <h2>Onde ficar a nosso castelo</h2>
         <p>Estaremos de portas abertas para a nossa realeza.</p>

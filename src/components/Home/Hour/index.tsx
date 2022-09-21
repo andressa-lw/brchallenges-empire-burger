@@ -1,6 +1,5 @@
 import styles from './styles.module.scss';
 
-
 import timerIcon from '../../../assets/icons/timer.svg'
 import { useState } from 'react';
 
@@ -28,13 +27,13 @@ export function Hour() {
   }, 1000);
 
   return (
-    <section id={styles["hour"]}>
+    <section className={styles.hour} id="hour">
       <div className="container">
         <div className={styles.box}>
           <div className={`${styles.boxOpen} ${isOpen ? styles.open : ""}`}>
             <small className={styles.status}>{isOpen ? "Aberto" : "Fechado"}</small>
             <div className={styles.icon}>
-              <img src={timerIcon} alt="" />
+              <img src={timerIcon} alt="Ícone de relógio" />
             </div>
             <div className={styles.text}>
               <h3>Horário de funcionamento</h3>

@@ -5,7 +5,7 @@ import bannerMob from '../../../assets/banner-mob.jpg';
 
 export function Banner() {
   return (
-    <section id={styles["banner"]}>
+    <section className={styles.banner} id="home">
       <picture>
         <source srcSet={bannerMob} media="(max-width: 560px)" />
         <source srcSet={bannerDesk} />
@@ -15,7 +15,7 @@ export function Banner() {
         <small>Uma nova experiência!</small>
         <h1>King <span>burger</span></h1>
         <p>Para quem tem um <span>Apetite de um REI!</span></p>
-        <a href="" className={styles.btn}>Comprar Agora</a>
+        <a href="https://www.ifood.com.br/" target="_blank" rel="noopener noreferrer" className={styles.btn}>Comprar Agora</a>
       </div>
     </section>
   )
