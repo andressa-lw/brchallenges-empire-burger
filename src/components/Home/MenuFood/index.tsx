@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-
+import "animate.css/animate.min.css";
 import styles from './styles.module.scss';
 
 interface ItemMenu {
