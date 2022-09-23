@@ -1,5 +1,4 @@
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import "animate.css/animate.min.css";
 import styles from './styles.module.scss'
 
 import CellIcon from '../../../assets/icons/cell.svg';
