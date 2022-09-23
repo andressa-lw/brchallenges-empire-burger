@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import styles from './styles.module.scss';
 
@@ -20,17 +21,17 @@ export function MenuFood() {
 
   return (
     <section className={styles.menufood} id="menufood">
-      <div className="container">
+      <div className={`${styles.containerFood} container`}>
         <div className={styles.box}>
-          <div className={styles.boxTitle}>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce className={styles.boxTitle}>
             <h2>Escolha o seu combo imperial, <span>peça agora!</span></h2>
             <p>Temos vários tipos de pratos para a nossa realeza, fique esperto porque temos sempre  promoção!</p>
             <a href="https://www.ifood.com.br/" target="_blank" rel="noopener noreferrer" className={styles.btn}>Ver Cardápio Completo</a>
-          </div>
-          <div className={styles.boxMenu}>
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__zoomIn" animateOnce className={styles.boxMenu}>
             <h2>Cardápio imperial | Burger</h2>
             <ul id="menuItem">
-            {itemMenu.map(item => {
+            {itemMenu.map((item) => {
               return (
                 <li key={item.plate}>
                   <h3>
@@ -42,7 +43,7 @@ export function MenuFood() {
               )
             })}
             </ul>
-          </div>
+          </AnimationOnScroll>
         </div>
       </div>
     </section>

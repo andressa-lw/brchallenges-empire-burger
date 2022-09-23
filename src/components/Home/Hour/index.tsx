@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import styles from './styles.module.scss';
 
 import timerIcon from '../../../assets/icons/timer.svg'
@@ -29,7 +30,7 @@ export function Hour() {
   return (
     <section className={styles.hour} id="hour">
       <div className="container">
-        <div className={styles.box}>
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce className={styles.box}>
           <div className={`${styles.boxOpen} ${isOpen ? styles.open : ""}`}>
             <small className={styles.status}>{isOpen ? "Aberto" : "Fechado"}</small>
             <div className={styles.icon}>
@@ -45,7 +46,7 @@ export function Hour() {
             <p>Não esqueça de marcar a gente no Instagram:</p>
             <h3>#empireburger</h3>
           </div>
-        </div>
+        </AnimationOnScroll>
       </div>
     </section>
   )

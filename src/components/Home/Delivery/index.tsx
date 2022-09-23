@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import styles from './styles.module.scss'
 
 import imgCell from '../../../assets/cel-comida.png';
@@ -11,8 +12,8 @@ export function Delivery() {
     <section className={styles.delivery} id="delivery">
       <div className="container">
         <hr />
-        <div className={styles.box}>
-          <div className={styles.boxImg}>
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce className={styles.box}>
+          <div>
             <img src={imgCell} alt="Celular com uma imagem de hamburguer" />
           </div>
           <div className={styles.boxDelivery}>
@@ -48,7 +49,7 @@ export function Delivery() {
               </li>
             </ul>
           </div>
-        </div>
+        </AnimationOnScroll>
       </div>
     </section>
   )

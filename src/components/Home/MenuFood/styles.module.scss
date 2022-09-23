@@ -89,16 +89,25 @@
   }
   @media (max-width: 980px) {
     background: url('../../../assets/bg-cardapio-mob.jpg') no-repeat top center var(--brown);
+    .containerFood {
+      padding: 0;
+    }
     .box {
       flex-direction: column;
       .boxTitle {
-        padding: 2.5rem 0;
+        padding: 2.5rem 24px;
         flex: 1;
         h2 {
           font-size: 1.5625rem;
           line-height: 1.75rem;
           max-width: 280px;
           width: 100%;
+        }
+      }
+      .boxMenu {
+        padding: 2rem 24px;
+        h2 {
+          font-size: 1.5rem;
         }
       }
     }
