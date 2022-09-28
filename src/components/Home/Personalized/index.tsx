@@ -17,6 +17,7 @@ export function Personalized() {
             <a href="#menufood" className={styles.btn}>Cardápio Imperial</a>
           </div>
         </AnimationOnScroll>
+        <hr />
       </div>
     </section>
   )

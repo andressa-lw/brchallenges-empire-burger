@@ -11,7 +11,6 @@ export function Delivery() {
   return (
     <section className={styles.delivery} id="delivery">
       <div className="container">
-        <hr />
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce className={styles.box}>
           <div>
             <img src={imgCell} alt="Celular com uma imagem de hamburguer" />

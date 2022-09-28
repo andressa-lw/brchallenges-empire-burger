@@ -1,0 +1,70 @@
+.instagramSection {
+  padding-top: 8rem;
+  h2 {
+    font-size: 2rem;
+    line-height: 2.1875rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    margin: .25rem 0 2rem 0;
+    text-align: center;
+  }
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: '';
+      background: linear-gradient(270.22deg, rgba(33, 32, 27, 0) -2.7%, #21201B 88.44%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      width: 10%;
+      height: 100%;
+    }
+    &::after {
+      content: '';
+      background: linear-gradient(270.22deg, #21201B 7.41%, rgba(33, 32, 27, 0) 91.38%);
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9;
+      width: 10%;
+      height: 100%;
+    }
+  }
+  .looptext {
+    background-color: var(--yellow);
+    padding: .625rem 0;
+    overflow: hidden;
+    div {
+      display: flex;
+      animation: marquee 10s linear infinite running;
+      column-gap: .75rem;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+    h3 {
+      font-size: 1.75rem;
+      line-height: 1.75rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgba(29, 6, 5, 0.9);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s ease;
+      white-space: nowrap;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0) }
+  100% { transform: translate(-50%) }
+}
