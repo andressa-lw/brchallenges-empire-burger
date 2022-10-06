@@ -45,14 +45,14 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 ### Nível Difícil
 
-- [ ] Todos os requisitos do nivel fácil e médio
+- [x] Todos os requisitos do nivel fácil e médio
 
-- [ ] Criar as seguintes seções: Nossa realeza, Publicações do instagram.
+- [x] Criar as seguintes seções: Nossa realeza, Publicações do instagram.
 
 - [x] Buscar a lista de itens do cardápio via api.
 
-- [ ] Buscar a lista de depoimentos via api.
+- [x] Buscar a lista de depoimentos via api.
 
-- [ ] Na seção Nossa realeza os depoimentos deverão estar em um carrousel funcional.
+- [x] Na seção Nossa realeza os depoimentos deverão estar em um carrousel funcional.
 
-- [ ] O texto de cada depoimento deverá estar limitado em quatro linhas, você pode usar a propriedade clamp do css.
+- [x] O texto de cada depoimento deverá estar limitado em quatro linhas, você pode usar a propriedade clamp do css.
